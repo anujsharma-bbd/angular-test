@@ -3,12 +3,8 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <p>
-      <app-aboutme></app-aboutme>
-  </p>
-  <hr/>
-  <p>
-    <app-contact-us></app-contact-us>
-  </p>
+  <a [routerLink]="['/aboutme']" routerLinkActive="active">About Me</a> |
+  <a [routerLink]="['/contactus']" routerLinkActive="active">Contact Us</a> |
+  <a [routerLink]="['/emp']" routerLinkActive="active">Emp List</a>
 </div>
 <router-outlet></router-outlet>
